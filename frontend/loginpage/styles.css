@@ -1,0 +1,103 @@
+body {
+    background-color: #181a1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    font-family: "sans";
+    background-color: #F4FDFF;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 370px;
+    height: 500px;
+}
+
+.login-container h1 {
+    color: #000000;
+}
+/* ... (same as before) ... */
+
+.login-container.expanded-container {
+    height: 550px; /* Adjust the desired height after expanding */
+}
+
+.input-field {
+    width: 85%;
+    height: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid #bc0202;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.button {
+    display: block;
+    width: 93%;
+    height: 30px;
+    padding: 10px;
+    margin: 30px 0;
+    background-color: #bc0202;
+    border: 2px solid black;
+    border-radius: 0px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.or-text {
+    margin-top: 30px;
+    position: relative;
+    color: #000000;
+}
+
+.or-text::before,
+.or-text::after {
+    content: "-";
+    position: absolute;
+    top: 50%;
+    width: 1%;
+    border-bottom: 1px solid #000000;
+}
+
+.or-text::before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.or-text::after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.social-button {
+    border: 2px solid #bc0202;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-button:hover {
+  background-color: #bc0202;
+  color: #FFFFFF;
+}
