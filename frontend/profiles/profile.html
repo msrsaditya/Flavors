@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="#" class="navbar-link navbar-account">My Account</a>
+    </div>
+    <div class="navbar-center"></div>
+    <div class="navbar-right">
+        <a href="#" class="navbar-link">Search</a>
+        <a href="#" class="navbar-link">Help</a>
+        <a href="#" class="navbar-link current-page">Profile Page</a>
+        <a href="#" class="navbar-link">Cart</a>
+    </div>
+</nav>
+<button class="Edit-button">EDIT PROFILE</button>
+<div class="contact-info">
+<h2>Shashank Aditya</h2>
+<h4>8919714099</h4>
+<h4>m.shashankaditya@gmail.com</h4>
+</div>
+<div class="container">
+    <button class="nav-button" onclick="showIframe('OrdersFrame')">Orders</button>
+    <button class="nav-button" onclick="showIframe('PremiumFrame')">Premium</button>
+    <button class="nav-button" onclick="showIframe('FavoritesFrame')">Favorites</button>
+    <button class="nav-button" onclick="showIframe('PaymentsFrame')">Payments</button>
+    <button class="nav-button" onclick="showIframe('AddressesFrame')">Addresses</button>
+    <button class="nav-button" onclick="showIframe('SettingsFrame')">Settings</button>
+</div>
+<div id="OrdersFrame" class="iframe-container">
+    <iframe src="orders/orders.html"></iframe>
+</div>
+<div id="PremiumFrame" class="iframe-container">
+    <iframe src="premium/premium.html"></iframe>
+</div>
+<div id="FavoritesFrame" class="iframe-container">
+    <iframe src="favorites/favorites.html"></iframe>
+</div>
+<div id="PaymentsFrame" class="iframe-container">
+    <iframe src="payments/payments.html"></iframe>
+</div>
+<div id="AddressesFrame" class="iframe-container">
+    <iframe src="address/address.html"></iframe>
+</div>
+<div id="SettingsFrame" class="iframe-container">
+    <iframe src="settings/settings.html"></iframe>
+</div>
+<script src="profile.js"></script>
+</body>
+</html>
