@@ -1,0 +1,93 @@
+body.dark-bg {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.header {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: -13px; /* Add margin at the bottom to push the title down */
+}
+.container {
+    background-color: #444444; /* Darker background for container */
+    border-radius: 0; /* Remove border radius */
+    overflow: hidden;
+    width: 100%; /* Make the container 100% width */
+    height: 100%; /* Make the container 100% height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.order {
+    display: flex;
+    width: 100%; /* Make the order container 100% width */
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #1f2223; /* Darker background for each order entry */
+}
+
+.order img {
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.order-details {
+    flex: 1;
+    text-align: left;
+}
+
+.order-details h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.order-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+.buttons button {
+    background-color: #bc0202;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.buttons button:hover {
+    background-color: #9b0101;
+}
+
+.reorder-button {
+    background-color: #bc0202;
+    /* Add additional styles as needed */
+}
+
+.help-button {
+    background-color: #bc0202;
+    /* Add additional styles as needed */
+}
