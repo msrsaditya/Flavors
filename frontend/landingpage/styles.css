@@ -1,0 +1,211 @@
+/* styles.css */
+/* Width and color of the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Change the width as needed */
+  background-color: #181a1b; /* Background color of the scrollbar track */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #bc0202; /* Color of the scrollbar handle */
+}
+
+/* Hover effect on the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #950202; /* Color when hovering over the scrollbar handle */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #181a1b;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 60px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.logo img {
+    /* Style the image */
+    width: 180px; /* Set width to auto to maintain aspect ratio */
+    height: auto; /* Set the desired height */
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 670px;
+    margin-top: 50px;
+}
+.user .button {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #bc0202;
+    border-radius: 0px;
+}
+/* Style for the "POPULAR CITIES IN INDIA" heading */
+/* Style for the heading */
+/* Center the entire container horizontally */
+.content {
+    display: flex;
+    justify-content: space-between; /* Added to separate left and right content */
+    align-items: center;
+    padding: 20px;
+    background-color: #181a1b;
+    color: #fc8a2c;
+    text-align: center;
+}
+
+.left-content {
+    flex: 1;
+    text-align: left; /* Align left content to the left */
+}
+
+.left-content h2 {
+    color: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.left-content p {
+    color: #999999;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.search-bar {
+    display: flex;
+    width: 100%;
+}
+.cities {
+   padding: 30px;
+   margin-top: -160px;
+   margin-bottom: 0px;
+   margin-left: 10px;
+   background-color:#181a1b;
+   height:100px;
+   font-size: 16px;
+   color: #cccccc;
+}
+.cities p:nth-child(2) {
+   word-spacing: 5px;
+}
+.search-bar input[type="text"]::placeholder {
+    /* Customize the font properties here */
+    font-family: Arial, Helvetica, sans-serif; /* Change the font family */
+    font-size: 19px; /* Change the font size */
+    font-weight: 100; /* Change the font weight */
+    color: #555555; /* Change the text color */
+    text-indent: 10px;
+}
+
+.search-bar input[type="text"] {
+    caret-color: #bc0202; /* Change the text color inside the cursor selection */
+    text-indent: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #bc0202;
+    border-radius: 0px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 460px;
+    height: 40px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #bc0202;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 150px;
+    height: 62px;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-content {
+    flex: 1;
+    padding: 20px; /* Add padding for spacing */
+}
+
+.right-content img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove any inline spacing */
+    margin-left: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    background-color: #221812;
+}
+
+.feature {
+    text-align: center;
+    width: 300px;
+    background-color: #221812;
+    color: #FFFFFF;
+}
+
+.features .feature:nth-child(3) {
+    margin-top: 35px;
+}
+
+.feature img {
+    max-width: 40%;
+    margin-bottom: 10px;
+    background-color: #221812;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #221812;
+    color: #ffffff;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
