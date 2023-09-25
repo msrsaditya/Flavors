@@ -1,2 +1,0 @@
-# Flavors
-Delivering Delicious Moments ❤️
