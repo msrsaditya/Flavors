@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&diplay=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-*{
-    font-family: 'Poppins' , sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,72 +11,71 @@
     transition: all .2s linear;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px;
     min-height: 100vh;
     padding-bottom: 70px;
+    background-color: #1a1a1a;
 }
 
-.container form{
+.container form {
     padding: 20px;
     width: 700px;
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
-
+    background: #333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
-.container form .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 19px;
+.inputBox {
+    margin-bottom: 20px;
 }
 
-.container form .row .col{
-    flex: 1 1 250px;
-}
-
-.container form .row .col .title{
-    font-size: 20px;
-    color: #333;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-}
-
-.container form .row .col .inputBox{
-    margin: 15px 0;
-}
-
-.container form .row .col .inputBox span{
-    margin-bottom: 10px;
+.inputBox .field-name {
+    color: #ffffff;
     display: block;
-
+    margin-bottom: 5px;
 }
 
-.container form .row .col .inputBox input{
+.inputBox input {
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     padding: 10px 15px;
     font-size: 15px;
-    text-transform: none;
+    background-color: #444;
+    color: #fff;
 }
 
-.container form .row .col .inputBox input:hover{
+.inputBox input:hover {
     border: 1px solid rgb(230, 168, 54);
 }
 
-.container form .submit-btn{
+.submit-btn {
     width: 100%;
     padding: 12px;
     font-size: 17px;
     background: rgb(230, 168, 54);
-    color:#fff ;
-    margin-top: 5px;
+    color: #fff;
     cursor: pointer;
+    background-color: #333;
+    border: 1px solid #555;
 }
 
-.container form .submit-btn:hover{
+.submit-btn:hover {
     background: rgb(230, 160, 29);
+}
+
+h3.heading {
+    color: #ffffff;
+    margin-bottom: 0px;
+    background-color: #444;
+    text-align: center;
+    font-family:"sans-serif";
+    font-size: 30px;
+    padding: 10px;
+}
+h3.title {
+    color: #ffffff;
+    margin-bottom: 10px;
 }
