@@ -1,67 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="customer.css">
+    <title>Customer Address Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <h3 class="heading">Flavors</h3>
     <div class="container">
         <form action="">
             <div class="row">
-
                 <div class="col">
-
                     <h3 class="title">Customer Address</h3>
 
                     <div class="inputBox">
-                        <span>full name :</span>
-                        <input type="text" placeholder="john deo" required>
+                        <span class="field-name">Full Name:</span>
+                        <input type="text" placeholder="Enter your full name" required>
                     </div>
                     <div class="inputBox">
-                        <span>email :</span>
-                        <input type="email" placeholder="johnexample@gmail.com" required>
+                        <span class="field-name">Email:</span>
+                        <input type="email" placeholder="Enter your email address" required>
                     </div>
                     <div class="inputBox">
-                        <span>mobile number :</span>
-                        <input type="number" placeholder="" maxlength="10" required>
+                        <span class="field-name">Mobile Number:</span>
+                        <input type="tel" placeholder="Enter your mobile number" required>
                     </div>
                     <div class="inputBox">
-                        <span>address :</span>
-                        <input type="text" placeholder="room-street-locality" required>
+                        <span class="field-name">Address:</span>
+                        <input type="text" placeholder="Enter your address" required>
                     </div>
                     <div class="inputBox">
-                        <span>city :</span>
-                        <input type="text" required>
+                        <span class="field-name">City:</span>
+                        <input type="text" placeholder="Enter your city" required>
                     </div>
                     <div class="inputBox">
-                        <span>state :</span>
-                        <input type="text" required>
+                        <span class="field-name">State:</span>
+                        <input type="text" placeholder="Enter your state" required>
                     </div>
                     <div class="inputBox">
-                        <span>pincode :</span>
-                        <input type="number" maxlength="6" required>
+                        <span class="field-name">Pincode:</span>
+                        <input type="text" placeholder="Enter your pincode" maxlength="6" required>
                     </div>
-                    
-
-
-
                 </div>
             </div>
-            <input type="submit" value="proceed to payment" required class="submit-btn" onclick="redirectToCheckoutPage('checkout.html')">
+            <input type="submit" value="Proceed to Payment" class="submit-btn">
         </form>
     </div>
-
-    <script>
-         function redirectToCheckoutPage(pageUrl) {
-           
-            window.location.href = pageUrl;
-        }
-
-        window.alert("proceed")
-
-        
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
