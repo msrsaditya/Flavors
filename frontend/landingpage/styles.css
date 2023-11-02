@@ -1,19 +1,3 @@
-/* styles.css */
-/* Width and color of the scrollbar track */
-::-webkit-scrollbar {
-  width: 10px; /* Change the width as needed */
-  background-color: #181a1b; /* Background color of the scrollbar track */
-}
-
-/* Handle of the scrollbar */
-::-webkit-scrollbar-thumb {
-  background-color: #bc0202; /* Color of the scrollbar handle */
-}
-
-/* Hover effect on the scrollbar handle */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #950202; /* Color when hovering over the scrollbar handle */
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -28,28 +12,21 @@ header {
     padding: 20px;
 }
 
-header .logo {
-    display: flex;
-    align-items: center;
+.flavors-text {
+    margin-top:0px;
+    margin-left:10px;
+    color: red; /* Set the font color to red */
+    font-family: 'sans-serif',cursive;
+    font-size: 50px; /* Set the font size as per your design */
 }
-
-header img {
-    max-height: 60px;
-    margin-left: 20px;
-    margin-top: 50px;
-}
-
 .logo img {
     /* Style the image */
     width: 180px; /* Set width to auto to maintain aspect ratio */
     height: auto; /* Set the desired height */
 }
-
 .user {
     display: flex;
     align-items: center;
-    margin-right: 670px;
-    margin-top: 50px;
 }
 .user .button {
     margin-right: 20px;
@@ -61,9 +38,6 @@ header img {
     background-color: #bc0202;
     border-radius: 0px;
 }
-/* Style for the "POPULAR CITIES IN INDIA" heading */
-/* Style for the heading */
-/* Center the entire container horizontally */
 .content {
     display: flex;
     justify-content: space-between; /* Added to separate left and right content */
@@ -83,29 +57,27 @@ header img {
     color: #cccccc;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
+    margin-top: -120px;
+    margin-bottom: -10px;
 }
 
 .left-content p {
     color: #999999;
     font-size: 18px;
     margin-bottom: 30px;
-    margin-left: 20px;
     font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 .search-bar {
+    margin-left: -15px;
     display: flex;
     width: 100%;
 }
 .cities {
-   padding: 30px;
-   margin-top: -160px;
-   margin-bottom: 0px;
-   margin-left: 10px;
+   margin-top: -170px;
+   margin-bottom: 16px;
+   margin-left: 20px;
    background-color:#181a1b;
    height:100px;
    font-size: 16px;
@@ -135,7 +107,7 @@ header img {
     margin-left: 15px;
     margin-bottom: 40px;
     width: 100%;
-    max-width: 460px;
+    max-width: 500px;
     height: 40px;
     background-color: transparent;
     color: #FFFFFF;
@@ -172,7 +144,6 @@ header img {
 .features {
     display: flex;
     justify-content: space-around;
-    margin-top: 0px;
     background-color: #221812;
 }
 
@@ -183,13 +154,14 @@ header img {
     color: #FFFFFF;
 }
 
-.features .feature:nth-child(3) {
-    margin-top: 35px;
+.features .feature:nth-child(3) p {
+    margin-top: 20px;
 }
-
+.features .feature:nth-child(3) h3 {
+    margin-top: 55px;
+}
 .feature img {
     max-width: 40%;
-    margin-bottom: 10px;
     background-color: #221812;
 }
 
@@ -198,10 +170,6 @@ footer {
     padding: 20px;
     background-color: #221812;
     color: #ffffff;
-}
-
-.footer-links {
-    margin-top: 10px;
 }
 
 .footer-links a {
