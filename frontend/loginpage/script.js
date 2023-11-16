@@ -17,6 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add a class to the login container to expand it
             loginContainer.classList.add('expanded-container');
+
+            // Redirect to the desired path after entering the password
+            continueButton.addEventListener('click', function () {
+                // Check if the password is entered (you might want to enhance this check)
+                if (passwordInput.value !== '') {
+                    // Redirect to the specified path
+                    window.location.href = '/Users/shashank/Flavors/frontend/mainpage/index.html';
+                }
+            });
         }
     });
 });
+
