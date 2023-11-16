@@ -1,83 +1,117 @@
 <html>
     <head>
         <title>My Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="location.css">
+        <link rel="stylesheet" href="styles2.css">
+        <link rel="stylesheet" href="styles1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-<body>
+<body style="width: 100%;">
+   <header>
+    
+        <input type="checkbox" value="" id="check">
+    <label for="check">
+        <i class="fa-solid fa-bars" id="memu" style="margin-top: 30px; color:black"></i>
+        <i class="fa-solid fa-xmark" id="cross"></i>
+    </label>
+    
+    <div class="sidebar"> 
+        <input type="text" placeholder="Search for area,street name..">
+        <a href="/Users/shashank/Flavors/frontend/search/index.html">
+        <div class="search-location">
+            <i class="fa-solid fa-location-crosshairs" id="loco"></i>
+            <div class="get">Get current location</div><br>
+            <div class="gps">Using gps</div>
+        </div>
+        </a>
+        <div class="saved">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="address">Saved Addresses</div>
+            <div class="add"></div>
+        </div>
+        <div class="current"></div>
+    </div>
     <div class="container">
+       
         <div class="navbar">
-            <img src="logo2.jpg" class="logo"> 
-            <div class="location-container">
-                <i class="fas fa-map-marker-alt location-icon" style="color: blue;"></i>
-                <p id="location-details">Fetching location...</p>
-               
-            </div>
+
+           
+            <img src="logo2.jpg" class="logo">
+        
             <ul>
-                <li><a href="#" class="tooltip"><i class="fa-solid fa-magnifying-glass" width></i>Search
+                <li><a href="#" class="tooltip" onclick="redirectToSearch('search.html')"><i class="fa-solid fa-magnifying-glass" width></i>Search
                 <span class="tooltiptext">Search</span></a></li>
                 <li><a href="#" class="tooltip"><i class="fa-solid fa-certificate"></i>Offers
                     <span class="tooltiptext">New</span></a></li>
-                <li><a href="#" class="tooltip"><i class="fa-regular fa-circle-question"></i>Help
+                <li><a href="/Users/shashank/Flavors/frontend/about/index.html" class="tooltip"><i class="fa-regular fa-circle-question"></i>Help
                     <span class="tooltiptext">Need Help</span></a></li>
                 <li><a href="/Users/shashank/Flavors/frontend/profiles/profile.html" class="tooltip"><i class="fa-regular fa-user"></i>Account
                    <span class="tooltiptext">Profile</span>
-                  <li>
-    <a href="/Users/shashank/Flavors/frontend/navpage/index.html">
-        <div class="cart-icon tooltip">
-            <i class="fa-solid fa-cart-shopping"></i>Cart
-            <span class="tooltiptext">
-                <h3>Cart Empty</h3>
-                <p>Good food is always cooking! Go ahead, order some Yummy items from the menu.</p>
-            </span>
-        </div>
-    </a>
-</li>
- 
+                   <li>
+                    <a href="/Users/shashank/Flavors/frontend/navpage/index.html">
+                    <div class="cart-icon tooltip">
+                      <i class="fa-solid fa-cart-shopping"></i>Cart
+                      <span class="tooltiptext">
+                        <h3>Cart Empty</h3><br>
+                        <p style="font-size: 11px;">Good food is always cooking! Go ahead, order some Yummy items from the menu.</p>
+                      </span>
+                    </div>
+                  </li>
+                 </a>
             </ul>
         </div>
     </div>
+   </header>
     <h2>Best offers for you</h2>
     <div class="row">
         
         <div class="column">
-            <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg" alt="Snow" class="column_image">
-            <button type="button" class="button1">
+            <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger.jpg" alt="Snow" class="column_image" style="overflow: ;">
+            <button type="button" class="button1" >
                 Order Now
             </button>
+            
         </div>
         <div class="column">
             <img src="https://img.freepik.com/free-photo/delicious-ice-cream-flavours-arrangement_23-2150735422.jpg?w=2000"alt="Snow" style="height: 215px;" class="column_image">
-            <button type="button" class="button2">
+            <button type="button" class="button2"onclick="redirectToIce('icecream.html')">
                 Order Now
             </button>
+            
         </div>
         <div class="column">
             <img src="https://media.istockphoto.com/id/1054228718/photo/indian-sweets-in-a-plate-includes-gulab-jamun-rasgulla-kaju-katli-morichoor-bundi-laddu.jpg?s=612x612&w=0&k=20&c=hYWCXLaldKvhxdBa83M0RnUij7BCmhf-ywWdvyIXR40=" alt="Snow"  class="column_image">
             <button type="button" class="button3">
                 Order Now
             </button>
+           
         </div>
         <div class="column">
             <img src="https://icebergdriveinn.com/cdn/shop/articles/Everything-You-Need-to-Know-About-Milkshakes.png?v=1648558641" alt="Snow"  class="column_image" height="215px">
             <button type="button" class="button4">
                 Order Now
             </button>
+            
         </div>
         <div class="column">
             <img src="https://media.istockphoto.com/id/488481490/photo/fish-biryani-with-basmati-rice-indian-food.jpg?s=612x612&w=0&k=20&c=9xEw3VOQSz9TP8yQr60L47uExyKF9kogRhQdlghlC00=" alt="Snow" class="column_image">
             <button type="button" class="button5">
                 Order Now
             </button>
+            
         </div>
+        
+            
         </div>
+    
     </div>
     <h2>What's in your mind</h2>
     <div class="row1">
         
         <div class="column1">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png" alt="Snow" class="column1_image" >
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png" alt="Snow" class="column1_image" onclick="redirectToBiryani('biryani.html')">
             
         </div>
         <div class="column1">
@@ -97,7 +131,7 @@
             
         </div>
         <div class="column1">
-            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Idli.png" alt="Snow"  class="column1_image">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Idli.png" alt="Snow"  class="column1_image" onclick="redirectToIdly('cart.html')">
             
         </div>
         <div class="column1">
@@ -120,48 +154,342 @@
             <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Coffee.png" alt="Snow"  class="column1_image">
             
         </div>
+        
 
     
     </div>
 
     <h2>Top restaurants near you</h2>
     <div class="row">
-        <div class="column">
+        <div class="column_img">
             <img src="https://www.allrecipes.com/thmb/SoBuPU73KcbYHl3Kp3j8Xx4A3fc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8805-CrispyFriedChicken-mfs-3x2-072-d55b8406d4ae45709fcdeb58a04143c2.jpg" alt="Restaurant A" class="column_image">
-            <button type="button" class="button1" onclick="redirectToRestaurantPage('page.html')">
+            <button type="button" class="button12" onclick="redirectToRestaurantPage('page.html')">
                 <strong>20% Off UPTO Rs.50</strong>
                 <p><strong>Restaurant A</strong></p>
             </button>
         </div>
+
     </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="main-container">
+        <section class="restaurants">
+            <div class="containers">
+                <div class="item-bar">
+                    <div class="number"><a href="#restaurants"><h2>Restaurants with online food delivery</h2></a></div>
+                    <div class="filters">
+                        <div class="relevance" style="font-size: 18px;margin-top: 23px;">Top Restaurants</div>
+                        <div class="delivery" style="font-size: 18px;margin-top: 23px;">Nearest </div>
+                        <div class="rating" style="font-size: 18px;margin-top: 23px;">Pure Veg</div>
+                        <div class="cost-lh" style="font-size: 18px;margin-top: 23px;">Non-Veg</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="restaurants"></div>
+                <div class="restaurant-list">
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Mughal Empire" src="https://static.wixstatic.com/media/91e241_475faa4fa56341f3878699dde5ab4904~mv2.jpg/v1/fill/w_640,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/91e241_475faa4fa56341f3878699dde5ab4904~mv2.jpg" width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Mughal Empire</div>
+                                        <div class="food-items"
+                                        title="Mandi, Biriyani, Fried Rices, ">Mandi, Biriyani, Fried Rice, Meals, Seafood</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>4.6</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>56 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹400 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Pizza Zone"
+                                            src="https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939_640.jpg"
+                                            width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Pizza Zone</div>
+                                        <div class="food-items"
+                                            title="Pizzas, Fast Food, Mexican, Desserts, Drinks">
+                                            Pizzas, Fast Food, Mexican, Fries, Drinks</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>3.8</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>42 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹250 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Wack Waffles &amp; Brownies" src="https://img.taste.com.au/0sZNLEwT/taste/2016/11/berry-ice-cream-cake-92220-1.jpeg" width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Bakery House</div>
+                                        <div class="food-items"
+                                        title="Waffle, Bakery, Desserts, Drinks">Cakes, Waffles, Bakery, Ice Creams, Deserts, Beverages</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>3.9</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>34 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹250 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Chili's American Grill &amp; Bar" src="https://img.onmanorama.com/content/dam/mm/en/food/recipe/images/2023/5/3/paneer-butter-masala.jpg" width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Tasty Hub</div>
+                                        <div class="food-items"
+                                        title="Mexican, Pastas, Ice Cream">Chicken, Paneer, Mutton, Aloo, Gobi</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>4.3</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>46 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹900 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Aha Food Court" src="https://www.myyellowplate.com/wp-content/uploads/2021/06/Best-South-Indian-Restaurants-in-Delhi-2.jpg" width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Aha Food Court</div>
+                                        <div class="food-items"
+                                        title="Fast Food,Tiffins,Meals">Tiffins, Paratha, Samosa, Drinks, Roti</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>4.7</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>40 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹199 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Hungry Snack" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTXpjKBtg6AQp9c-bJ1D5BI40ILSBLhr0JfUsIJetgYd4ysex_Ut02rws6VxSAia1qMU&usqp=CAU" width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Hungry Snack</div>
+                                        <div class="food-items"
+                                        title="Mexican, Pastas, Ice Cream">Snacks, Noodles, Rolls, Manchuria, Beverages</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>4.4</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>38 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹400 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Marcos" src="https://restaurantclicks.com/wp-content/uploads/2022/04/chinese-food-dishes.jpg" width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Marcos</div>
+                                        <div class="food-items"
+                                        title="Chinese, Thai, Asian, Drinks, Desserts, Oriental, Seafood, Pan-Asian">Chinese, Thai, Asian, Desserts, Seafood</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>4.0</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>33 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹500 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img class="_2tuBw _12_oN" alt="Smoothies Hut" src="https://stories.forbestravelguide.com/wp-content/uploads/2019/03/HERO-BoozyShakes-TheCosmopolitanOfLasVegas-BamboozledShakes-CreditTheCosmopolitanOfLasVegas.jpg" width="254" height="160">
+                                    </div>
+                                    <div class="place-name-div">
+                                        <div class="name">Smoothies Hut</div>
+                                        <div class="food-items"
+                                        title="Fast Food,Tiffins,Meals">Smoothies, Mock Tails, Chai, Coffee, Milk Shakes</div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                            <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                            <span>5.0</span>
+                                        </div>
+                                        <div>•</div>
+                                        <div>39 MINS</div>
+                                        <div>•</div>
+                                        <div class="price">₹200 FOR TWO</div>
+                                    </div>
+                                </div>
+                                <div class="quick-view">
+                                    <span role="button" aria-label="Open" class="view-btn"> VIEW </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="points">
+                COMPANY
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#">About us</a></li>
+                    <li class="footer-li"><a href="#">Team</a></li>
+                    <li class="footer-li"><a href="#">Careers</a></li>
+                    <li class="footer-li"><a href="#">Swiggy Blog</a></li>
+                    <li class="footer-li"><a href="#">Bug Bounty</a></li>
+                    <li class="footer-li"><a href="#">Swiggy Super</a></li>
+                    <li class="footer-li"><a href="#">Swiggy Corporate</a></li>
+                    <li class="footer-li"><a href="#">Swiggy Instamart</a></li>
+                </ul>
+            </div>
+            <div class="points">
+                CONTACT
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#">Help & Support</a></li>
+                    <li class="footer-li"><a href="#">Partner with us</a></li>
+                    <li class="footer-li"><a href="#">Ride with us</a></li>
+                </ul>
+            </div>
+            <div class="points">
+                LEGAL
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#">Terms & Conditions</a></li>
+                    <li class="footer-li"><a href="#">Refund & Cancellation</a></li>
+                    <li class="footer-li"><a href="#">Privacy Policy</a></li>
+                    <li class="footer-li"><a href="#">Cookie Policy</a></li>
+                    <li class="footer-li"><a href="#">Offer Terms</a></li>
+                    <li class="footer-li"><a href="#">Phishing & Fraud</a></li>
+                </ul>
+            </div>
+            <div class="points">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
+                    height="54" />
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
+                    height="54" />
+            </div>
+        </div>
+    </footer>
     
 
     <script>
         function redirectToRestaurantPage(pageUrl) {
             window.location.href = pageUrl;
         }
-        function getUserLocation() {
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                const latitude = position.coords.latitude;
-                const longitude = position.coords.longitude;
-                fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        const city = data.address.city;
-                        const pincode = data.address.postcode;
-                        const locationDetails = `City: ${city}, Pincode: ${pincode}`;
-                        document.getElementById('location-details').textContent = locationDetails;
-                    })
-                    .catch(error => {
-                        console.error("Error fetching location details:", error);
-                    });
-            });
-        } else {
-            console.error("Geolocation is not available in your browser.");
+        function redirectToSearch(pageUrl) {
+            window.location.href = pageUrl;
         }
-    }
-    getUserLocation();
+        function redirectToIce(pageUrl){
+            window.location.href = pageUrl;
+        }
+function redirectToIdly(pageUrl){
+    window.location.href=pageUrl;
+}
+function redirectToBiryani(pageUrl){
+    window.location.href = pageUrl;
+}
     </script>
    
 </body>

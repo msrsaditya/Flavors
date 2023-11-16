@@ -1,0 +1,120 @@
+
+.sidebar{
+    width: 400px;
+    height: 99%;
+    position: fixed;
+    left: -400px;
+    border: 2px solid rgba(211, 206, 206, 0.568);
+    transition: all .5s ease;
+    background-color: white;
+    z-index: 12;
+}
+.sidebar input{
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 350px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.search-location{
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(123, 117, 117);
+    width: 350px;
+    margin-top: 10px;
+    transition: .2s;
+    margin-bottom: 25px;
+}
+.search-location i{
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    padding: 8px;
+    color: orange;
+    transition: .2s;
+}
+.search-location:hover{
+    border-color: darkgray;
+    padding-left: 10px;
+    width: 352px;
+    height: 90px;
+    
+}
+.get{
+    display: inline;
+    font-size: 17px;
+}
+.gps{
+    display: inline;
+    padding-left: 45px;
+    font-size: 14px;
+    color: rgb(153, 149, 149);
+}
+.saved{
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(123, 117, 117);
+    width: 350px;
+    margin-top: 10px;
+}
+.saved:hover{
+    border-color: darkgray;
+    padding-left: 10px;
+    width: 352px;
+    height: 130px;
+    box-shadow: gray;
+    cursor: pointer;
+}
+.saved i{
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    padding: 8px;
+    color: rgb(253, 165, 1);
+}
+.address{
+    display: inline;
+    font-size: 17px;
+}
+.add{
+    width: auto;
+    height: 60px;
+    background-color: rgb(149, 147, 147);
+}
+#check{
+    display: none;
+}
+label #memu,label #cross{
+    position: absolute;
+    cursor: pointer;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #memu{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cross{
+    left: 370px;
+    
+}
+
+label #memu{
+    left:40px;
+    top: 25px;
+    font-size: 35px;
+    transition: all .5s;
+}
+label #cross{
+    z-index: 1111;
+    left: -370px;
+    top: 17px;
+    font-size: 30px;
+    transition: all .5s;
+    color: orange;
+}
